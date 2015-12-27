@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 &amp; CSS3</title>
+		<link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+		<link href='../stylebase.css' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script type='text/javascript' src='./google.js'></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>HTML5 et CSS3</h1>
+				<h2>S&eacute;lecteurs CSS</h2>
+			</hgroup>
+			<a href="../index.html" title="retour">Retour</a>
+		</header>
+
+		<section class="contenu">
+			<h1 class="titreJaune">Des s&eacute;lecteurs d'attributs</h1>
+			<section>
+				<p id="zip"><a href="archive.zip">Archive.zip</a></p>
+				<p class="codeJaune">a[href$=&quot;.zip&quot;]:before {<br>content: url(&quot;zip.png&quot;);<br>}</p>
+			</section>
+		</section>
+		<section class="contenu">
+			<h1 class="titreJaune">Les pseudo-classes structurelles</h1>
+			<section>
+				<h2 class="jaune">Le ni&egrave;me enfant avec :nth-child</h2>
+				<table class="niemeEnfant" id="niemeEnfant">
+					<tr><td>Liste de courses</td></tr>
+					<tr><td>Pain</td></tr>
+					<tr><td>Beurre</td></tr>
+					<tr><td>Lait</td></tr>
+					<tr><td>Oeufs</td></tr>
+				</table>
+				<p class="codeJaune">tr:nth-child(3) {<br>background-color: #33ABCF;<br>color: white;<br>}</p>
+			</section>
+			<section>
+				<table class="niemeEnfant" id="niemeEnfant2">
+					<tr><td>Liste de courses</td></tr>
+					<tr><td>Pain</td></tr>
+					<tr><td>Beurre</td></tr>
+					<tr><td>Lait</td></tr>
+					<tr><td>Oeufs</td></tr>
+				</table>
+				<p class="codeJaune">tr:nth-child(2n) {<br>background-color: #CCC;<br>}</p>
+			</section>
+			<section>
+				<table class="niemeEnfant" id="niemeEnfant3">
+					<tr>
+						<td>1</td>
+						<td>Ma liste de course</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Pain</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Beurre</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Lait</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Oeufs</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Laitages</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Biscottes</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>P&acirc;tes</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Riz</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Eau</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Jus d'orange</td>
+					</tr>
+				</table>
+				<p class="codeJaune">tr:nth-child(5n+1) { color: red; }<br>tr:nth-child(5n+2) { color: green; }<br>tr:nth-child(5n+3) { color: brown; }<br>tr:nth-child(5n+4) { color: black; }<br>tr:nth-child(5n+5) { color: blue; }</p>
+			</section>
+			<section>
+				<table class="niemeEnfant" id="niemeEnfant4">
+					<tr>
+						<td>1</td>
+						<td>Ma liste de course</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Pain</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Beurre</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Lait</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Oeufs</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Laitages</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Biscottes</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>P&acirc;tes</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Riz</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Eau</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>Jus d'orange</td>
+					</tr>
+				</table>
+				<p class="codeJaune">tr:nth-child(2n) { background-color: #CCC; }<br>dtr:nth-child(5n+1) { color: red; }<br>tr:nth-child(5n+2) { color: green; }<br>tr:nth-child(5n+3) { color: brown; }<br>tr:nth-child(5n+4) { color: black; }<br>tr:nth-child(5n+5) { color: blue; }</p>
+			</section>
+		</section>
+
+		<footer>
+			<ul>
+				<li><a href="http://gantis.fr">Site des auteurs</a></li>
+				<li><a href="http://www.competencemicro.com/booklet.php?id=232">Site de l'&eacute;diteur</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

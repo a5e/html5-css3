@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 & CSS3</title>
+		<link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+		<link href='../stylebase.css' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script type='text/javascript' src='./google.js'></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>HTML5 et CSS3</h1>
+				<h2>Des dégradés</h2>
+			</hgroup>
+			<a href="../index.html" title="retour">Retour</a>
+		</header>
+
+		<section class="contenu">
+			<h1 class="titreRose">Un dégradé linéaire</h1>
+			<section>
+				<div id="degrade1"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(linear, left top, right top, from(red), to(yellow));<br>background: linear-gradient(0deg, yellow, red);<br>}</p>
+			</section>
+			<section>
+				<div id="degrade2"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(linear, left bottom, right top, from(red), to(yellow));<br>background: linear-gradient(45deg, yellow, red);<br>}</p>
+			</section>
+			<section>
+				<div id="degrade3"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.25, red), color-stop(0.75, yellow));<br>background: linear-gradient(left, yellow 25%, red 75%);<br>}</p>
+			</section>
+			<section>
+				<div id="degrade4"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(linear, left bottom, right bottom, from(red), color-stop(0.70, orange), to(yellow));<br>background: linear-gradient(left, yellow, orange 75%, red);<br>}</p>
+			</section>
+		</sectioné
+		<section class="contenu">
+			<h1 class="titreRose">Un dégradé radial</h1>
+			<section>
+				<div id="degrade5"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 212, from(red), to(yellow));<br>background: radial-gradient(red, yellow);<br>}</p>
+			</section>
+			<section>
+				<h2 class="rose">Webkit</h2>
+				<div id="degrade6"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(radial, 150 10, 20, 150 200, 50, from(white), to(silver));<br>}</p>
+			</section>
+			<section>
+				<div id="degrade7"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(radial, 150 10, 20, 150 200, 50, from(white), to(silver)), silver;<br>}</p>
+			</section>
+			<section>
+				<h2 class="rose">Tous</h2>
+				<div id="degrade8"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(radial, 25% 25%, 0, 25% 25%, 75, from(red), to(yellow));<br>background: radial-gradient(25% 25%, closest-side circle, red, yellow);<br>}</p>
+			</section>
+			<section>
+				<div id="degrade9"></div>
+				<p class="codeRose">div {<br>background: radial-gradient(25% 25%, closest-side ellipse, red, yellow);<br>}</p>
+			</section>
+			<section>
+				<div id="degrade10"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(red), to(yellow));<br>background: radial-gradient(50% 50%, contain circle, red, yellow);<br>}</p>
+			</section>
+			<section>
+				<div id="degrade11"></div>
+				<p class="codeRose">div {<br>background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 212, from(red), to(yellow));<br>background: radial-gradient(50% 50%, cover circle, red, yellow);<br>}</p>
+			</section>
+		</section>
+		<footer>
+			<ul>
+				<li><a href="http://gantis.fr">Site des auteurs</a></li>
+				<li><a href="http://www.competencemicro.com/booklet.php?id=232">Site de l'éditeur</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+div {
+	float: left;
+	width: 300px;
+	height: 300px;
+}
+
+#degrade1 {
+	height: 50px;
+	background: -webkit-gradient(linear, left top, right top, from(red), to(yellow));
+	background: -webkit-linear-gradient(0deg, yellow, red);
+	background: -moz-linear-gradient(0deg, yellow, red);
+	background: linear-gradient(0deg, yellow, red);
+}
+
+#degrade2 {
+	background: -webkit-gradient(linear, left bottom, right top, from(red), to(yellow));
+	background: -webkit-linear-gradient(45deg, yellow, red);
+	background: -moz-linear-gradient(45deg, yellow, red);
+	background: linear-gradient(45deg, yellow, red);
+}
+
+#degrade3 {
+	height: 50px;
+	background: -webkit-gradient(linear, left bottom, right bottom, color-stop(0.25, red), color-stop(0.75, yellow));
+	background: -webkit-linear-gradient(left, yellow 25%, red 75%);
+	background: -moz-linear-gradient(left, yellow 25%, red 75%);
+	background: linear-gradient(left, yellow 25%, red 75%);
+}
+
+#degrade4 {
+	height: 50px;
+	background: -webkit-gradient(linear, left bottom, right bottom, from(red), color-stop(0.70, orange), to(yellow));
+	background: -webkit-linear-gradient(left, yellow, orange 75%, red);
+	background: -moz-linear-gradient(left, yellow, orange 75%, red);
+	background: linear-gradient(left, yellow, orange 75%, red);
+}
+
+#degrade5 {
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 212, from(red), to(yellow));
+	background: -webkit-radial-gradient(red, yellow);
+	background: -moz-radial-gradient(red, yellow);
+	background: radial-gradient(red, yellow);
+}
+
+#degrade6 {
+	background: -webkit-gradient(radial, 150 10, 20, 150 200, 50, from(white), to(silver));
+}
+
+#degrade7 {
+	background: -webkit-gradient(radial, 150 10, 20, 150 200, 50, from(white), to(silver)), silver;
+}
+
+#degrade8 {
+	background: -webkit-gradient(radial, 25% 25%, 0, 25% 25%, 75, from(red), to(yellow));
+	background: -webkit-radial-gradient(25% 25%, closest-side circle, red, yellow);
+	background: -moz-radial-gradient(25% 25%, closest-side circle, red, yellow);
+	background: radial-gradient(25% 25%, closest-side circle, red, yellow);
+}
+
+#degrade9 {
+	height: 200px;
+	background: -webkit-radial-gradient(25% 25%, closest-side ellipse, red, yellow);
+	background: -moz-radial-gradient(25% 25%, closest-side ellipse, red, yellow);
+	background: radial-gradient(25% 25%, closest-side ellipse, red, yellow);
+}
+
+#degrade10 {
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(red), to(yellow));
+	background: -webkit-radial-gradient(50% 50%, contain circle, red, yellow);
+	background: -moz-radial-gradient(50% 50%, contain circle, red, yellow);
+	background: radial-gradient(50% 50%, contain circle, red, yellow);
+}
+#degrade11 {
+	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 212, from(red), to(yellow));
+	background: -webkit-radial-gradient(50% 50%, cover circle, red, yellow);
+	background: -moz-radial-gradient(50% 50%, cover circle, red, yellow);
+	background: radial-gradient(50% 50%, cover circle, red, yellow);
+}

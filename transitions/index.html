@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 & CSS3</title>
+		<link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+		<link href='../stylebase.css' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script type='text/javascript' src='./google.js'></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>HTML5 et CSS3</h1>
+				<h2>Transitions et animations</h2>
+			</hgroup>
+			<a href="../index.html" title="retour">Retour</a>
+		</header>
+
+		<section class="contenu">
+			<h1 class="titreBleu">Transformation d'un élément</h1>
+			<section>
+				<h2 class="bleu">Déplacement</h2>
+				<figure>
+					<img src="image.jpg" class="un">
+					<img src="image.jpg" id="deux">`
+				</figure>
+				<p class="codeBleu">img {<br>	transform: translate(50px, 25px);<br>}</p>
+			</section>
+
+			<section>
+				<h2 class="bleu">Modifier la taille</h2>
+				<figure>
+					<img src="image.jpg" class="un">
+					<img src="image.jpg" id="trois">
+				</figure>
+				<p class="codeBleu">img {<br>	transform: scale(0.5, 0.5);<br>}</p>
+			</section>
+			<section>
+				<h2 class="bleu">Déplacer puis modifier la taille</h2>
+				<figure>
+					<img src="image.jpg" class="un">
+					<img src="image.jpg" id="quatre">
+				</figure>
+				<p class="codeBleu">img {<br>	transform: translate(100px, 100px) scale(0.5, 0.5);<br>}</p>
+			</section>
+			<section>
+				<h2 class="bleu">Modifier la taille puis déplacer</h2>
+				<figure>
+					<img src="image.jpg" class="un">
+					<img src="image.jpg" id="cinq">
+				</figure>
+				<p class="codeBleu">img {<br>	transform: scale(0.5, 0.5) translate(100px, 100px);<br>}</p>
+			</section>
+
+			<section>
+				<h2 class="bleu">Rotation</h2>
+				<figure>
+					<img src="image.jpg" class="un">
+					<img src="image.jpg" id="six">
+				</figure>
+				<p class="codeBleu">img {<br>	transform: rotate(-45deg);<br>}</p>
+			</section>
+		</section>
+		<footer>
+			<ul>
+				<li><a href="http://gantis.fr">Site des auteurs</a></li>
+				<li><a href="http://www.competencemicro.com/booklet.php?id=232">Site de l'éditeur</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

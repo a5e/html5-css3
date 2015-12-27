@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+
+		<title>Maxime's Blog</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+
+		<link rel="apple-touch-icon" href="icon.png">
+		<link rel="icon" type="image/png" href="favicon.png">
+
+
+		<!--[if !IE]>-->
+			<link  rel="stylesheet"  href="iphone.css"  type="text/css" media="only screen and (max-device-width: 480px)">
+			<link  rel="stylesheet"  href="ipad.css"  type="text/css" media="only screen and (min-device-width: 768px) and (max-device-width: 768px)">
+		<!--<![endif]-->
+		<script type='text/javascript' src='./google.js'></script>
+	</head>
+	<body>
+	<div id="wrapper">
+		<header>
+			<hgroup>
+				<a href="./"><h1>Le blog de Maxime</h1></a>
+				<div id="baseline"><a href="./">Avec des vrais morceaux de moi dedans</a></div>
+			</hgroup>
+		</header>
+		<aside id="sidebar">
+		<div id="menu"><ul><li><a href="index.html">Accueil</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html">A propos</a></li></ul></div>
+		</aside>
+		<div id="container">
+			<section class="content">
+				<form method="post" action="./traitement.php" id="contactForm">
+					<table>
+						<tr>
+							<td class="label"><label for="mail">Mail</label></td>
+							<td class="input"><input type="email" name="mail" autocomplete="yes" placeholder="Votre email de contact" required></input></td>
+						</tr>
+						<tr>
+							<td class="label"><label for="objet">Objet</label></td>
+							<td class="input"><input type="text" name="objet" autocomplete="no" placeholder="Objet de votre mail" required></td>
+						</tr>
+						<tr>
+							<td colspan="2"><textarea name="content" autofocus required></textarea></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="submit" value="Envoyer"></td>
+						</tr>
+					</table>
+				</form>
+			</section>
+		</div>
+		<footer>© Maxime 2010</footer>
+	</div>
+	</body>
+</html>

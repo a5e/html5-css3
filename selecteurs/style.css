@@ -1,0 +1,53 @@
+#zip {
+	font-family: Helvetica, sans-serif;
+	float: left;
+	text-align: center;
+	width: 360px;
+}
+
+#zip a {
+	font-size: 34px;
+	color: grey;
+	text-decoration: none;
+}
+
+a[href$=".zip"]:before {
+	content: url("zip.png");
+}
+
+#zip a:hover {
+	text-decoration: underline;
+}
+
+.niemeEnfant {
+	float: left;
+	border-collapse: collapse;
+	margin-left: 135px;
+}
+
+.niemeEnfant td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#niemeEnfant tr:nth-child(3) {
+	background-color: #33ABCF;
+	color: white;
+}
+
+#niemeEnfant2 tr:nth-child(2n) {
+	background-color: #CCC;
+}
+
+#niemeEnfant3 tr:nth-child(5n+1) { color: red; }
+#niemeEnfant3 tr:nth-child(5n+2) { color: green; }
+#niemeEnfant3 tr:nth-child(5n+3) { color: brown; }
+#niemeEnfant3 tr:nth-child(5n+4) { color: black; }
+#niemeEnfant3 tr:nth-child(5n+5) { color: blue; }
+
+#niemeEnfant4 tr:nth-child(5n+1) { color: red; }
+#niemeEnfant4 tr:nth-child(5n+2) { color: green; }
+#niemeEnfant4 tr:nth-child(5n+3) { color: brown; }
+#niemeEnfant4 tr:nth-child(5n+4) { color: black; }
+#niemeEnfant4 tr:nth-child(5n+5) { color: blue; }
+#niemeEnfant4 tr:nth-child(2n) { background-color: #CCC; }

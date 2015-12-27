@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 & CSS3</title>
+		<link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+		<link href='../stylebase.css' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script type='text/javascript' src='./google.js'></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>HTML5 et CSS3</h1>
+				<h2>Des bordures</h2>
+			</hgroup>
+			<a href="../index.html" title="retour">Retour</a>
+		</header>
+
+		<section class="contenu">
+			<h1 class="titreVert">Des coins arrondis</h1>
+			<section>
+				<h2 class="vert">Le même coin partout</h2>
+				<figure>
+					<img id="i1" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code code codeVert">img {<br>	border-radius: 50px;<br>}</p>
+			</section>
+			<section>
+				<h2 class="vert">Des coins indépendants</h2>
+				<figure>
+					<img id="i2" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	border-radius: 0px 25px 50px 100px;<br>}</p>
+			</section>
+			<section>
+				<figure>
+					<img id="i3" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	border-radius: 0px 50px;<br>}</p>
+			</section>
+			<section>
+				<figure>
+					<img id="i4" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	border-radius: 0px 50px 100px;<br>}</p>
+			</section>
+		</section>
+
+		<section class="contenu">
+			<h1 class="titreVert">Une bordure avec des images</h1>
+			<section>
+				<figure>
+					<img class="image" id="i5" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	border-image: url("bordure.png") 30;<br>}</p>
+			</section>
+			<section>
+				<figure>
+					<img class="image" id="i6" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	border-image: url("bordure.png") 30 round;<br>}</p>
+			</section>
+			<section>
+				<figure>
+					<img class="image" id="i7" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	border-image: url("bordure.png") 30 round stretch;<br>}</p>
+			</section>
+		</section>
+
+		<section class="contenu">
+			<h1 class="titreVert">Ombres</h1><!---->
+			<section>
+				<figure>
+					<img class="image" id="i8" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	box-shadow: 10px 10px 10px grey;<br>}</p>
+			</section>
+			<section>
+				<figure>
+					<img class="image" id="i9" src="image.jpg" alt="image d'un coucher de soleil">
+				</figure>
+				<p class="code codeVert">img {<br>	box-shadow: 0px 0px 10px 10px grey;<br>}</p>
+			</section>
+			<section>
+				<figure>
+					<div class="image" id="i10"></div>
+				</figure>
+				<p class="code codeVert">img {<br>	box-shadow: black 0px 0px 30px 10px inset;<br>}</p>
+			</section>
+		</section>
+		<section class="contenu">
+			<h1 class="titreVert">Timbre</h1><!---->
+			<section>
+				<figure id="fondTimbre">
+					<img id="timbre" src="photo.jpg" alt="timbre">
+				</figure>
+				<p class="code codeVert">#timbre {<br>	border-image: url("timbre.png") 30 repeat;<br>	transform: rotate(20deg)<br>}</p>
+			</section>
+		</section>
+
+
+		<footer>
+			<ul>
+				<li><a href="http://gantis.fr">Site des auteurs</a></li>
+				<li><a href="http://www.competencemicro.com/booklet.php?id=232">Site de l'éditeur</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

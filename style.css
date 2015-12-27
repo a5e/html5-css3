@@ -1,0 +1,143 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 800px;
+	margin: auto;
+	font-family: "Copse", sans-serif;
+}
+
+header {
+	height: 100px;
+	margin: 20px;
+	text-align: center;
+}
+header a {
+	position: relative;
+}
+
+header a:before {
+	content: url("retour.png");
+}
+
+#intro  {
+	width: 260px;
+	float: left;
+	padding: 20px;
+}
+
+#intro p {
+	text-indent: 30px;
+	text-align: justify;
+	padding-top: 5px;
+}
+
+#intro a {
+	color: black;
+	text-decoration: underline;
+}
+
+#chapitres {
+	width: 500px;
+	float: right;
+}
+
+#chapitres hgroup h1 {
+	width: auto;
+	padding: 6px;
+	font-size: 1.6em;
+}
+
+#chapitres hgroup h1 a{
+	color: black;
+	text-decoration: none;
+	padding: 2px 10px 2px;
+}
+
+#chapitres hgroup h1 a[href="#"], #chapitres hgroup h1 a[href^="#"]:hover{
+	color: grey;
+	text-decoration: line-through;
+}
+
+#chapitres hgroup h1::before{
+	content: '';
+	display: inline;
+	width: 20px;
+	height: 35px;
+	padding: 2px 10px 2px 0px;
+}
+#chapitres hgroup h1:nth-child(6n+1):before{
+	background-color: #F8C531;
+}
+#chapitres hgroup h1:nth-child(6n+2):before{
+	background-color: #E46B34;
+}
+#chapitres hgroup h1:nth-child(6n+3):before{
+	background-color: #C31770;
+}
+#chapitres hgroup h1:nth-child(6n+4):before{
+	background-color: #313F85;
+}
+#chapitres hgroup h1:nth-child(6n+5):before{
+	background-color: #0090AC;
+}
+#chapitres hgroup h1:nth-child(6n+6):before{
+	background-color: #73B943;
+}
+
+#chapitres hgroup h1, #chapitres hgroup h1 a{
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+#chapitres hgroup h1:hover {
+	text-indent: 10px;
+}
+
+#chapitres hgroup h1:nth-child(6n+1):hover a{
+	background-color: #FCECC2;
+}
+#chapitres hgroup h1:nth-child(6n+2):hover a{
+	background-color: #F8D1BF;
+}
+#chapitres hgroup h1:nth-child(6n+3):hover a{
+	background-color: #F1BDCE;
+}
+#chapitres hgroup h1:nth-child(6n+4):hover a{
+	background-color: #CACFE0;
+}
+#chapitres hgroup h1:nth-child(6n+5):hover a{
+	background-color: #ABDBE0;
+}
+#chapitres hgroup h1:nth-child(6n+6):hover a{
+	background-color: #DBEAC7;
+}
+
+footer {
+	width: 800px;
+	text-align: center;
+	clear: both;
+}
+footer ul {
+	list-style: none;
+	padding: 30px;
+}
+
+footer ul li {
+	display: inline;
+	padding: 0px 10px;
+}
+
+footer ul li a {
+	text-decoration:none;
+	color:black;
+}
+
+footer ul li a:hover {
+	text-decoration:underline;
+	color:black;
+}
